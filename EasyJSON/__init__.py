@@ -1,2 +1,0 @@
-from EasyJSON.func import *
-
