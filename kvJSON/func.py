@@ -1,8 +1,10 @@
 import json
 import os
+import subprocess
+import random
 
 
-def init(*filename):
+def init(filename):
 	global file
 	file = ""
 	global undesirablechars
@@ -67,4 +69,35 @@ def removeData(key):
         del data[key]
         with open(file, 'w') as writefile:
             json.dump(data, writefile)
+
+def encryptData(key):
+	with open(file, "r+") as readfile:
+		data = json.load(readfile)
+		keyToRead = ""
+		for element in key:
+			if element == undesirablechars:
+				pass
+			else:
+				keyToRead += element
+		value = data.get(keyToRead)
+		alphadict = {1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f', 7: 'g', 8: 'h', 9: 'i', 10: 'j',
+		11: 'k', 12: 'l', 13: 'm', 14: 'n', 15: 'o', 16: 'p', 17: 'q', 18: 'r', 19: 's', 20: 't', 21: 'u',
+		22: 'v', 23: 'w', 24: 'x', 25: 'y', 26: 'z'}
+		encryptKey = []
+		newKey = ''
+		for element in value:
+			shiftvalue = random.randint(1, 26)
+			encryptchar = alphadict.get(shiftvalue)
+			encryptKey.append(shiftvalue)
+			newkey += encryptchar
+		newdata = {keyToRead: newKey}
+		data.update(newdata)
+		readfile.seek(0)
+		json.dump(data, readfile)
+		with open("hiddenkeys.json", 'w') as writefile:
+			json.dump(encryptKey, writefile)
+			subprocess.check_call(["attrib","+H","hiddenkeys.json"])
+
+
+
         
