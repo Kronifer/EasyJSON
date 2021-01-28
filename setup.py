@@ -8,7 +8,7 @@ setup(
   author = 'Dillon Runke',                   # Type in your name
   author_email = 'dillonr5@live.wsd1.org',      # Type in your E-Mail
   url = 'https://github.com/Kronifer/EasyJSON',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/Kronifer/EasyJSON/archive/v1.0.0.tar.gz',    # I explain this later on
   keywords = ['JSON', 'Data Storage'],   # Keywords that define your package best
   classifiers=[
     'Development Status :: 4 - Beta',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
