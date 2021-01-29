@@ -1,10 +1,8 @@
 import json
 import os
-import subprocess
-import random
 
 
-def init(filename):
+def init(*filename):
 	global file
 	file = ""
 	global undesirablechars
@@ -14,9 +12,9 @@ def init(filename):
 		    pass
 		 else:
 		    file += element
-	with open(file, "w") as write:
-		data = {"Initiated": "True"}
-		json.dump(data, write)
+		 with open(file, "w") as write:
+		    data = {"Initiated": "True"}
+		    json.dump(data, write)
 
 
 def getFilename():
@@ -59,7 +57,7 @@ def getData(key):
 def removeData(key):
     with open(file, 'r+') as readfile:
         data = json.load(readfile)
-        os.remove("datastoring.json")
+        os.remove(file)
         keytoread = ""
         for element in key:
             if(element == undesirablechars):
@@ -70,7 +68,19 @@ def removeData(key):
         with open(file, 'w') as writefile:
             json.dump(data, writefile)
 
-
-
-
-        
+def updateData(key, value):
+    with open(file, 'r+') as readfile:
+        data = json.load(readfile)
+        os.remove(file)
+        keytoread = ""
+        for element in key:
+            if element == undesirablechars:
+                pass
+            else:
+                keytoread += element
+            del data[key]
+            newdata = {key: value}
+            with open(file, 'w') as writefile:
+                data.update(newdata)
+                writefile.seek(0)
+                json.dump(data, writefile)
