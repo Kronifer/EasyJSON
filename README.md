@@ -23,7 +23,7 @@ import kvJSON
 
 kvJSON.init("storage.json")
 
-kvJSON.addData("Key", "Value")
+kvJSON.addData("key", "value")
 ```
 
 
