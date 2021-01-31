@@ -2,7 +2,7 @@
 
 ### **A Python library for interacting with JSON in a key-value format.**
 
-***Source code is availiable at https://github.com/Kronifer/kvJSON/.***
+***Source code is available at https://github.com/Kronifer/kvJSON/.***
 
 ***Docs are at kvjson.readthedocs.io/.***
 
@@ -23,7 +23,7 @@ import kvJSON
 
 kvJSON.init("storage.json")
 
-kvJSON.addData("Key", "Value")
+kvJSON.addData("key", "value")
 ```
 
 
