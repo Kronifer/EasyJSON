@@ -4,7 +4,7 @@
 
 ***Source code is available at https://github.com/Kronifer/kvJSON/.***
 
-***Docs are at kvjson.readthedocs.io/.***
+***Docs are at https://kvjson.readthedocs.io/.***
 
 ## Examples:
 
