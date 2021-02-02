@@ -26,5 +26,8 @@ kvJSON.init("storage.json")
 kvJSON.addData("key", "value")
 ```
 
+## Contributing:
 
+To contribute, fork and make a pr. Honestly, if the addition makes sense I'll add it,
+so I'm not gonna set guidelines.
 
