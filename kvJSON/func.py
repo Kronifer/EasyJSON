@@ -267,3 +267,14 @@ def decryptData(key, encryptKey):
 		json.dump(encryptedData, writefile2)
 		return newValue
 
+def groupData(listOfKeys, groupName):
+    with open(file, "r+") as readfile:
+        data = json.load(readfile)
+        keylist = []
+        for element in listOfKeys:
+            keylist.append(getData(element))
+        newGroupData = {groupName: listOfKeys}
+        data.update(newGroupData)
+        readfile.seek(1)
+        json.dump(data, readfile)
+
