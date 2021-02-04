@@ -278,3 +278,13 @@ def groupData(listOfKeys, groupName):
         readfile.seek(1)
         json.dump(data, readfile)
 
+def getGroupData(groupName):
+    with open(file, 'r') as readfile:
+        data = json.load(readfile)
+        keyGroup = data.get(groupName)
+        valueGroup = []
+        for element in keyGroup:
+            value = data.get(element)
+            value += valueGroup
+        return valueGroup
+
