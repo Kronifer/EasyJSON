@@ -17,7 +17,11 @@ def init(filename):
     with open(file, "w") as write:
         data = {"Initiated": "True"}
         json.dump(data, write)
-
+def softInit(filename):
+    global undesirablechars
+    undesirablechars = ["(", ")", "'", ","]
+    global file
+    file = filename
 
 def getFilename():
     return file
