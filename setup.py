@@ -9,8 +9,46 @@ setup(
   packages = ['kvJSON'],   # Chose the same as "name"
   version = '1.4.1',
   description = 'An easy way to work with JSON in Python.',
-  long_description=long_des,
-  long_description_content_type='text/markdown',# Start with a small number and increase it with every change you make
+  long_description="""
+  kvJSON
+======
+
+.. _a-python-library-for-interacting-with-json-in-a-key-value-format:
+
+**A Python library for interacting with JSON in a key-value format.**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Source code is available
+at**\ *\ *\ https://github.com/Kronifer/kvJSON/\ *\ *\ **.**
+
+**Docs are at**\ *\ *\ https://kvjson.readthedocs.io/\ *\ *\ **.**
+
+Examples:
+---------
+
+**Initialization**:
+
+.. code:: py
+
+   import kvJSON
+
+   kvJSON.init("storage.json")
+
+**Adding Data:**
+
+.. code:: py
+
+   import kvJSON
+
+   kvJSON.init("storage.json")
+
+   kvJSON.addData("key", "value")
+
+Contributing:
+-------------
+
+To contribute, fork and make a pr. Honestly, if the addition makes sense
+I'll add it, so I'm not gonna set guidelines.""", # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   author = 'Dillon Runke',                   # Type in your name
   author_email = 'dillonr5@live.wsd1.org',      # Type in your E-Mail
