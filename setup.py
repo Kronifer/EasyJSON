@@ -7,7 +7,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 setup(
   name = 'kvJSON',         # How you named your package folder (MyLib)
   packages = ['kvJSON'],   # Chose the same as "name"
-  version = '1.4.1',
+  version = '1.4.2',
   description = 'An easy way to work with JSON in Python.',
   long_description="""
   kvJSON
@@ -53,7 +53,7 @@ I'll add it, so I'm not gonna set guidelines.""", # Start with a small number an
   author = 'Dillon Runke',                   # Type in your name
   author_email = 'dillonr5@live.wsd1.org',      # Type in your E-Mail
   url = 'https://github.com/Kronifer/kvJSON',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/Kronifer/kvJSON/archive/v1.4.3.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/Kronifer/kvJSON/archive/v1.4.4.tar.gz',    # I explain this later on
   keywords = ['JSON', 'Data Storage'],   # Keywords that define your package best
   classifiers=[
     'Development Status :: 5 - Production/Stable',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
