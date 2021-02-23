@@ -3,13 +3,13 @@ from distutils.core import setup
 from os import path
 this_directory = path.abspath(path.dirname(__file__))
 with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
-    long_description = f.read()
+    long_des = f.read()
 setup(
   name = 'kvJSON',         # How you named your package folder (MyLib)
   packages = ['kvJSON'],   # Chose the same as "name"
   version = '1.4.1',
   description = 'An easy way to work with JSON in Python.',
-  long_description=long_description,
+  long_description=long_des,
   long_description_content_type='text/markdown',# Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   author = 'Dillon Runke',                   # Type in your name
