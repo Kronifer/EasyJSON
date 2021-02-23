@@ -274,13 +274,8 @@ def decryptData(key, encryptKey):
 		return newValue
 
 
-def getGroupData(groupName):
+def getAll():
     with open(file, 'r') as readfile:
-        data = json.load(readfile)
-        keyGroup = data.get(groupName)
-        valueGroup = []
-        for element in keyGroup:
-            value = data.get(element)
-            value += valueGroup
-        return valueGroup
+        jsonData = json.load(readfile)
+        return jsonData
 
