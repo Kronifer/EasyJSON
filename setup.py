@@ -48,8 +48,9 @@ Contributing:
 -------------
 
 To contribute, fork and make a pr. Honestly, if the addition makes sense
-I'll add it, so I'm not gonna set guidelines.""", # Start with a small number and increase it with every change you make
-  license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
+I'll add it, so I'm not gonna set guidelines.""",
+  setup_requires=['wheel'],
+  license='MIT',        
   author = 'Dillon Runke',                   # Type in your name
   author_email = 'dillonr5@live.wsd1.org',      # Type in your E-Mail
   url = 'https://github.com/Kronifer/kvJSON',   # Provide either the link to your github or to your website
