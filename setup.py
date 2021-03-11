@@ -45,8 +45,7 @@ setup(
 
   To contribute, fork and make a pr. Honestly, if the addition makes sense
   I'll add it, so I'm not gonna set guidelines.""",
-  long_description_content_type="text/x-rst"
-  setup_requires=['wheel'],
+  long_description_content_type="text/x-rst",
   license='MIT',        
   author = 'Dillon Runke',                   # Type in your name
   author_email = 'dillonr5@live.wsd1.org',      # Type in your E-Mail
