@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
   name = 'kvJSON',         # How you named your package folder (MyLib)
   packages = ['kvJSON'],   # Chose the same as "name"
-  version = '1.4.2',
+  version = '1.4.4',
   description = 'An easy way to work with JSON in Python.',
   long_description="""
   kvJSON
