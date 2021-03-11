@@ -7,44 +7,45 @@ setup(
   description = 'An easy way to work with JSON in Python.',
   long_description="""
   kvJSON
-======
+  ======
 
-.. _a-python-library-for-interacting-with-json-in-a-key-value-format:
+  .. _a-python-library-for-interacting-with-json-in-a-key-value-format:
 
-**A Python library for interacting with JSON in a key-value format.**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  **A Python library for interacting with JSON in a key-value format.**
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Source code is available
-at https://github.com/Kronifer/kvJSON/**
+  **Source code is available
+  at https://github.com/Kronifer/kvJSON/**
 
-**Docs are at https://kvjson.readthedocs.io/**
+  **Docs are at https://kvjson.readthedocs.io/**
 
-Examples:
----------
+  Examples:
+  ---------
 
-**Initialization**:
+  **Initialization**:
 
-.. code:: py
+  .. code:: py
 
-   import kvJSON
+     import kvJSON
 
-   kvJSON.init("storage.json")
+     kvJSON.init("storage.json")
 
-**Adding Data:**
+  **Adding Data:**
 
-.. code:: py
+  .. code:: py
 
-   import kvJSON
+     import kvJSON
 
-   kvJSON.init("storage.json")
+     kvJSON.init("storage.json")
 
-   kvJSON.addData("key", "value")
+     kvJSON.addData("key", "value")
 
-Contributing:
--------------
+  Contributing:
+  -------------
 
-To contribute, fork and make a pr. Honestly, if the addition makes sense
-I'll add it, so I'm not gonna set guidelines.""",
+  To contribute, fork and make a pr. Honestly, if the addition makes sense
+  I'll add it, so I'm not gonna set guidelines.""",
+  long_description_content_type="text/x-rst"
   setup_requires=['wheel'],
   license='MIT',        
   author = 'Dillon Runke',                   # Type in your name
